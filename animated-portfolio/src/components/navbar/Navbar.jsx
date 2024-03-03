@@ -96,7 +96,6 @@ const Navbar = (props) => {
                 </li>
             </ul>
             <Tooltip id="my-tooltip" />
-
         </div >
     );
 };
