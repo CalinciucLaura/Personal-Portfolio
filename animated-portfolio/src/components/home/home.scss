@@ -1,0 +1,24 @@
+.home {
+    .intro {
+        height: auto;
+
+        h1 {
+            font-size: 68px;
+            letter-spacing: -0.2px;
+            line-height: 90px;
+            margin-bottom: 43px;
+            font-weight: 300;
+            color: white;
+
+            span {
+                color: #ff99cc;
+            }
+        }
+
+        img {
+            width: 50px;
+            display: block;
+            margin: auto;
+        }
+    }
+}

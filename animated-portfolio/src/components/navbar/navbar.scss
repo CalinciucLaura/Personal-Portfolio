@@ -1,0 +1,25 @@
+.navbar {
+
+    .dmenu {
+        list-style-type: none;
+        border: 1px solid #575757;
+        border-radius: 30px;
+        position: fixed;
+        right: 68px;
+        top: 200px;
+        width: 55px;
+        text-align: center;
+        gap: 20px;
+        padding: 24px 0;
+        background: #1f1f1f;
+        z-index: 20;
+
+        li {
+            padding-top: 5px;
+        }
+    }
+
+    a {
+        font-size: 20px;
+    }
+}
