@@ -6,6 +6,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import { useInView } from "react-intersection-observer";
 import Resume from './components/resume/Resume';
+import Skills from './components/skills/Skills';
 
 function App() {
   const [refHome, inViewHome] = useInView({
@@ -51,7 +52,9 @@ function App() {
           <Resume />
         </section>
         <section id="services" ref={refServices}>Services</section>
-        <section id="skills" ref={refSkills}>Skills</section>
+        <section id="skills" ref={refSkills}>
+          <Skills />
+        </section>
         <section id="portfolio" ref={refPortfolio}>Portfolio</section>
         <section id="testimonial" ref={refTestimonial}>testimonial</section>
         <section id="contact" ref={refContact}>Contact</section>

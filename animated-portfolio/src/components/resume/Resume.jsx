@@ -5,7 +5,7 @@ import { LiaStreamSolid } from "react-icons/lia";
 const Resume = () => {
     return (
         <div className="resume">
-            <h3><LiaStreamSolid style={{ marginRight: '10px' }} />Resume</h3>
+            <h3><LiaStreamSolid style={{ marginRight: '10px' }} />RESUME</h3>
             <h1>Education & <span>Experience</span></h1>
 
             <div className="content">
