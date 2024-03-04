@@ -14,7 +14,7 @@ const Sidebar = (props) => {
             </div>
 
             <img src={profileImage} alt="Laura" />
-            <h3>Iasi Romania <br /> Computer Science Student, 3th Year</h3>
+            <h3>Iasi Romania <br /> Computer Science Student 3th Year</h3>
 
             <div className="social">
                 <a href="https://github.com/CalinciucLaura?tab=repositories" >

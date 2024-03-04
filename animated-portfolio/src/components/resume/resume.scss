@@ -1,19 +1,22 @@
 .resume {
+    translate: 0px -20px;
+
     h3 {
         border: 1px solid #565656;
         font-size: 12px;
         font-weight: 300;
         border-radius: 30px;
-        padding: 9px 20px;
+        padding: 9px;
         align-items: center;
         display: inline-flex;
         color: white;
+        translate: 0px -20px;
     }
 
     h1 {
         font-size: 50px;
         letter-spacing: -0.2px;
-        line-height: 70px;
+        line-height: 50px;
         margin: 0;
         margin-bottom: 40px;
         font-weight: 300;
@@ -26,13 +29,12 @@
 
     .content {
         border-left: 1px solid #565656;
-        border-width: thin;
     }
 
     .item {
         transform: translate(50px, 0);
         line-height: normal;
-        margin: 50px 0;
+        margin-bottom: 40px;
 
         h4 {
             margin: 10px 0 5px 0;
@@ -46,7 +48,7 @@
         }
 
         h2 {
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 300;
             color: white;
             margin: 10px 0;

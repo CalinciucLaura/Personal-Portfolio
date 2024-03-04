@@ -31,7 +31,7 @@ const Home = () => {
     return (
         <div className="home">
             <div className="intro">
-                <h1>Hi, I'm <span>Laura </span><br /> Computer Science Student <br /> and Developer</h1>
+                <h1>Hi, I'm <span>Laura </span><br /> Computer Science <br /> Student and Developer</h1>
                 <p>I design and code beautifully simple things and i love what i do. <br /> Just simple like that!
                 </p>
 
