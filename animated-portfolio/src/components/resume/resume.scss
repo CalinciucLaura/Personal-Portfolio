@@ -1,0 +1,56 @@
+.resume {
+    h3 {
+        border: 1px solid #565656;
+        font-size: 12px;
+        font-weight: 300;
+        border-radius: 30px;
+        padding: 9px 20px;
+        align-items: center;
+        display: inline-flex;
+        color: white;
+    }
+
+    h1 {
+        font-size: 50px;
+        letter-spacing: -0.2px;
+        line-height: 70px;
+        margin: 0;
+        margin-bottom: 40px;
+        font-weight: 300;
+        color: white;
+
+        span {
+            color: #ff99cc;
+        }
+    }
+
+    .content {
+        border-left: 1px solid #565656;
+        border-width: thin;
+    }
+
+    .item {
+        transform: translate(50px, 0);
+        line-height: normal;
+        margin: 50px 0;
+
+        h4 {
+            margin: 10px 0 5px 0;
+            color: #ff99cc;
+            font-size: 15px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 15px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 300;
+            color: white;
+            margin: 10px 0;
+        }
+
+    }
+}
