@@ -1,7 +1,8 @@
 import React from "react"
 import "./home.scss"
 import { motion } from "framer-motion";
-import scrollImage from "./scroll.png"
+import scrollImage from "./scroll.png";
+import { GoHome } from 'react-icons/go';
 
 const textVariants = {
     initial: {
@@ -31,6 +32,7 @@ const Home = () => {
     return (
         <div className="home">
             <div className="intro">
+                <h3> <GoHome style={{ marginRight: '10px' }} />INTRODUCE</h3>
                 <h1>Hi, I'm <span>Laura </span><br /> Computer Science <br /> Student and Developer</h1>
                 <p>I design and code beautifully simple things and i love what i do. <br /> Just simple like that!
                 </p>

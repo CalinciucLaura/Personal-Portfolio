@@ -2,6 +2,18 @@
     .intro {
         transform: translate(0, 100px);
 
+        h3 {
+            border: 1px solid #565656;
+            font-size: 12px;
+            font-weight: 300;
+            border-radius: 30px;
+            padding: 9px 20px;
+            align-items: center;
+            display: inline-flex;
+            color: white;
+            translate: 0px -20px;
+        }
+
         h1 {
             font-size: 68px;
             letter-spacing: -0.2px;

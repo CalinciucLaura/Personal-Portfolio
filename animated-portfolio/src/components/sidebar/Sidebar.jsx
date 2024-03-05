@@ -4,6 +4,7 @@ import profileImage from "../../images/laura.jpeg"
 import { TfiEmail } from "react-icons/tfi";
 import { DiGithubBadge } from "react-icons/di";
 import { FaLinkedin } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Sidebar = (props) => {
     return (
@@ -24,12 +25,19 @@ const Sidebar = (props) => {
                     <FaLinkedin style={{ fontSize: '20px', border: '2px solid #575757', padding: '15px', borderRadius: '50%' }} />
                 </a>
             </div>
-            <button>
-                <>
+
+            <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className="btn">
+                <button>
                     <TfiEmail style={{ marginRight: '15px', fontSize: '16px' }} />HIRE ME!
-                </>
-            </button>
-        </div>
+                </button>
+            </Link>
+        </div >
 
     )
 };
