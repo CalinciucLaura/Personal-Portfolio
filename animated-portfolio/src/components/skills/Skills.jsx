@@ -10,6 +10,7 @@ import { FaDatabase } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoFigma } from "react-icons/io5";
+import { FaSass } from "react-icons/fa";
 import c_plus from "./c++.png";
 
 const Skills = (props) => {
@@ -48,14 +49,20 @@ const Skills = (props) => {
                     <p>SQL</p>
                 </div>
 
+
+                <div className="element">
+                    <FaHtml5 id="icon" />
+                    <p>HTML</p>
+                </div>
+
                 <div className="element">
                     <FaCss3Alt id="icon" />
                     <p>CSS</p>
                 </div>
 
                 <div className="element">
-                    <FaHtml5 id="icon" />
-                    <p>HTML</p>
+                    <FaSass id="icon" />
+                    <p>Sass</p>
                 </div>
                 <div className="element">
                     <IoLogoFigma id="icon" />
