@@ -9,6 +9,7 @@ import Resume from './components/resume/Resume';
 import Skills from './components/skills/Skills';
 import Contact from './components/contact/Contact';
 import Testimonial from './components/testimonial/Testimonial';
+import Portfolio from './components/portfolio/Portfolio';
 
 function App() {
   const [refHome, inViewHome] = useInView({
@@ -58,7 +59,7 @@ function App() {
           <Skills />
         </section>
         <section id="portfolio" ref={refPortfolio}>
-        <iframe style={{ border: '1px solid rgba(0, 0, 0, 0.1)', width:"800" ,height:"450" }} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FZOo9wzPVa8vhuKVnyvOett%2FUntitled%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DALVNFF0Vwoc4TzuQ-1" allowfullscreen></iframe>
+          <Portfolio />
         </section>
         <section id="testimonial" ref={refTestimonial}>
           <Testimonial />

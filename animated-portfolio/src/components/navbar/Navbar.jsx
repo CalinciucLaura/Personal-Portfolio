@@ -135,7 +135,8 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
 
                 <motion.li whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                    <a className="scroll-to" href="#portfolio"
+                    <a className="scroll-to"
+                        href="#portfolio"
                         data-tooltip-id="my-tooltip"
                         data-tooltip-content="Portfolio"
                         data-tooltip-place="left"
@@ -143,7 +144,7 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
                         onMouseLeave={() => setTooltipState({ ...tooltipState, 'portfolio': false })}>
                         <Link
                             activeClass="active"
-                            to="porfolio"
+                            to="portfolio"
                             spy={true}
                             smooth={true}
                             offset={-70}
