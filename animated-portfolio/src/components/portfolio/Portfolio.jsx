@@ -8,19 +8,37 @@ import { motion } from "framer-motion";
 
 const items = [
     {
-
-        title: "Ice Cream Website",
         h2: "Ice Cream Website",
         p: "React, Sass, Figma",
         span: <DiGithubBadge />,
         link: "https://github.com/CalinciucLaura/IceCream.git"
     },
     {
-        title: "HEMA - Herbal Website",
         h2: "HEMA - Herbal Website",
         p: "HTML, CSS, JS",
         span: <DiGithubBadge />,
         link: "https://github.com/CalinciucLaura/HEMA-Website.git"
+    },
+    {
+
+        h2: "CChat - Messenger App",
+        p: "C, SQLite",
+        span: <DiGithubBadge />,
+        link: "https://github.com/CalinciucLaura/Offline-Messenger.git"
+    },
+    {
+
+        h2: "Numerical Estimation",
+        p: "Python",
+        span: <DiGithubBadge />,
+        link: "https://github.com/CalinciucLaura/Numerical-Estimation.git"
+    },
+    {
+
+        h2: "This Website",
+        p: "React, Sass, Framer Motion",
+        span: <DiGithubBadge />,
+        link: "https://github.com/CalinciucLaura/Personal-Portfolio.git"
     }
 ]
 
