@@ -5,6 +5,7 @@ import { TfiEmail } from "react-icons/tfi";
 import { DiGithubBadge } from "react-icons/di";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Sidebar = (props) => {
     return (
@@ -33,9 +34,15 @@ const Sidebar = (props) => {
                 offset={-70}
                 duration={500}
                 className="btn">
-                <button>
-                    <TfiEmail style={{ marginRight: '15px', fontSize: '16px' }} />HIRE ME!
-                </button>
+                <motion.div
+                    className="box"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                >
+                    <button>
+                        <TfiEmail style={{ marginRight: '15px', fontSize: '16px' }} />HIRE ME!
+                    </button>
+                </motion.div>
             </Link>
         </div >
 

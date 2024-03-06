@@ -6,6 +6,7 @@ import { TfiEmail } from "react-icons/tfi";
 import 'react-tooltip/dist/react-tooltip.css'
 import './navbar.scss';
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, isTestimonial, isContact }) => {
     const [tooltipState, setTooltipState] = useState({
@@ -22,7 +23,8 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
     return (
         <div className="navbar">
             <ul className="dmenu scroll-nav d-flex">
-                <li>
+                <motion.li whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <a
                         className="scroll-to active"
                         href="#home"
@@ -43,8 +45,9 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
                         </Link>
                     </a>
                     <Tooltip content={"Home"} isVisible={tooltipState['home']} />
-                </li>
-                <li>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <a
                         className="scroll-to "
                         href="#about"
@@ -65,8 +68,9 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
                         </Link>
                     </a>
                     <Tooltip content={"About"} isVisible={tooltipState['about']} />
-                </li>
-                <li>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <a className="scroll-to"
                         href="#resume"
                         data-tooltip-id="my-tooltip"
@@ -85,8 +89,9 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
                         </Link>
                     </a>
                     <Tooltip content={"Resume"} isVisible={tooltipState['resume']} />
-                </li>
-                <li>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <a className="scroll-to"
                         href="#services"
                         data-tooltip-id="my-tooltip"
@@ -105,8 +110,9 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
                         </Link>
                     </a>
                     <Tooltip content={"Services"} isVisible={tooltipState['services']} />
-                </li>
-                <li>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <a className="scroll-to"
                         href="#skills"
                         data-tooltip-id="my-tooltip"
@@ -125,9 +131,10 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
                         </Link>
                     </a>
                     <Tooltip content={"Skills"} isVisible={tooltipState['skills']} />
-                </li>
+                </motion.li>
 
-                <li>
+                <motion.li whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <a className="scroll-to" href="#portfolio"
                         data-tooltip-id="my-tooltip"
                         data-tooltip-content="Portfolio"
@@ -145,8 +152,9 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
                         </Link>
                     </a>
                     <Tooltip content={"Portfolio"} isVisible={tooltipState['portfolio']} />
-                </li>
-                <li>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <a className="scroll-to"
                         href="#testimonial"
                         data-tooltip-id="my-tooltip"
@@ -165,8 +173,9 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
                         </Link>
                     </a>
                     <Tooltip content={"Testimonial"} isVisible={tooltipState['testimonial']} />
-                </li>
-                <li>
+                </motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <a className="scroll-to"
                         href="#contact"
                         data-tooltip-id="my-tooltip"
@@ -185,7 +194,7 @@ const Navbar = ({ isHome, isAbout, isResume, isServices, isSkills, isPortfolio, 
                         </Link>
                     </a>
                     <Tooltip content={"Contact"} isVisible={tooltipState['contact']} />
-                </li>
+                </motion.li>
             </ul>
         </div >
     );

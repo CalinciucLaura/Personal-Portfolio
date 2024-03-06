@@ -100,7 +100,7 @@ const Contact = () => {
                     onSubmit={sendEmail}
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ delay: 4, duration: 1 }}
+                    transition={{ delay: 2, duration: 1 }}
                 >
                     <label>FULL NAME<span>*</span></label>
                     <input type="text" required placeholder="Your Full name" name="name" />
@@ -108,7 +108,8 @@ const Contact = () => {
                     <input type="email" required placeholder="Your email address" name="email" />
                     <label>MESSAGE<span>*</span></label>
                     <textarea rows={5} required placeholder="Write your message here ..." name="message" />
-                    <button>SEND MESSAGE</button>
+                    <motion.button whileHover={{ scale: 1.1 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 10 }}>SEND MESSAGE</motion.button>
                     {error && "Error"}
                     {success && "Success"}
                 </motion.form>
